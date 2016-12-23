@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_2" version="4.2">
+    <Header description="linear regression">
+        <Application name="Apache Spark MLlib" version="2.0.1"/>
+        <Timestamp>2016-12-14T18:10:30</Timestamp>
+    </Header>
+    <DataDictionary numberOfFields="3">
+        <DataField name="field_0" optype="continuous" dataType="double"/>
+        <DataField name="field_1" optype="continuous" dataType="double"/>
+        <DataField name="target" optype="continuous" dataType="double"/>
+    </DataDictionary>
+    <RegressionModel modelName="linear regression" functionName="regression">
+        <MiningSchema>
+            <MiningField name="field_0" usageType="active"/>
+            <MiningField name="field_1" usageType="active"/>
+            <MiningField name="target" usageType="target"/>
+        </MiningSchema>
+        <RegressionTable intercept="0.0">
+            <NumericPredictor name="field_0" coefficient="1.680470687144002"/>
+            <NumericPredictor name="field_1" coefficient="0.0016035267191445305"/>
+        </RegressionTable>
+    </RegressionModel>
+</PMML>
